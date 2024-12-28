@@ -9,7 +9,7 @@ It's about 4h of work in total, so excuse the poor structure. It does, however (
 use
 
 ```
-npx run dev
+npm run dev
 ```
 
 to start the webserver.
@@ -17,8 +17,16 @@ to start the webserver.
 # Compiling
 
 ```
-npx run build
+npm run build
 ```
 
 will build a `dist/` directory with a static version of the site.
+
+# Deploying
+
+There is a workflow in `.github/workflows` which deploys this repository's main branch to github pages.
+
+
+rrw@semiramis.org.uk
+2024-12-28
 
