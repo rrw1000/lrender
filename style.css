@@ -1,0 +1,45 @@
+.container {
+  width: 94%;
+  margin: auto;
+  padding: 10px;
+}
+
+.one {
+  width: 47%;
+  float: left;
+  border: 2px;
+  border-style: solid;
+  padding: 20px;
+}
+
+.two {
+  width: 47%;
+  float: right;
+  border: 2px;
+  border-style: solid;
+  padding: 20px;
+}
+
+#compiled {
+  width: 100%
+}
+
+#centerme {
+  align: center;
+}
+
+
+ul.blanklist {
+  list-style-type: none;
+}
+
+.code {
+  font-family: monospace;
+}
+
+#c {
+  width: 100%;
+  height: 60%;
+  display: block
+}
+

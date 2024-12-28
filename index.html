@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>three js app</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      body { margin : 0; }
+    </style>
+  </head>
+  <body>
+    <h1>L-system-based fun fractals</h1>
+    <div class="container">
+    <div class="one">
+      <fieldset>
+        <legend>Curve to plot</legend>
+        <ul class="blanklist">
+          <li>
+            <input type="radio" id="curve-hilbert" class="set-curve"  name="curve" value="hilbert" checked />
+            <label for="curve-hilbert">Hilbert</label>
+          </li>
+          <li>
+            <input type="radio" id="curve-cantor" class="set-curve" name="curve" value="cantor" />
+            <label for="curve-cantor">Cantor</label>
+          </li>
+          <li>
+            <input type="radio" id="curve-koch" class="set-curve" name="curve" value="koch" />
+            <label for="curve-koch">Koch</label>
+          </li>
+          <li>
+            <input type="radio" id="curve-sierpinksi" class="set-curve" name="curve" value="sierpinski" />
+            <label for="curve-sierpinski">Sierpinski</label>
+          </li>
+          <li>
+            <input type="radio" id="curve-simple" class="set-curve" name="curve" value="simple" />
+            <label for="curve-simple">Simple</label>
+          </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Curve parameters</legend>
+        <label for="recursion-depth">Recursion depth</label> <input id="recursion-depth" name="recursion depth" value="5" />
+        <label for="rotation-speed">Rotation speed</label> <input id="rotation-speed" name="rotation speed" value="0.005" />
+        <p></p>
+        <label for="threed">3d rotations?</label> <input id="threed" type="checkbox" name="3d" checked />
+        <label for="angles">Angles</label><input id="angles" name="angles" value="0,0,0"  />
+        <label for="zoom">Zoom</label><input id="zoom" name="zoom" value="1.0"  />
+      </fieldset>
+    </div>
+    <div class="two">
+      <p><label for="rules">L-System rules</label></p>
+      <p>
+        <span style="code">+</span> - Turn 90 degrees clockwise, <span style="code">-</span> - Turn 90 degrees anticlockwise<br/>
+        <span style="code">F</span> - Move forward one unit. <span style="code">A-E,G-R,T-Z</span> - Macros<br/>
+        <span style="code">S</span> - The start symbol</span>
+      </p>
+      <p><textarea id="rules" style="ta" cols="50" rows="8"></textarea></p>
+      <p><button id="load-button" type="button">Load</button>
+    </div>
+    </div>
+    <script style="canvas" type="module" src="/main.js"></script>
+    <div id="render"><canvas id="c"></canvas></div>
+    <div class="both">
+      <div id="centerme">
+        <p>L-System expression after expansion</p>
+        <div><textarea id="compiled" rows="12"></textarea></div>
+      </div>
+    </div>
+  </body>
+</html>
