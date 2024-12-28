@@ -1,11 +1,12 @@
 .container {
-  width: 94%;
+  width: 97%;
   margin: auto;
   padding: 10px;
 }
 
 .one {
-  width: 47%;
+  min-width: 20%;
+  width: auto;
   float: left;
   border: 2px;
   border-style: solid;
@@ -13,7 +14,8 @@
 }
 
 .two {
-  width: 47%;
+  min-width: 40%;
+  width: auto;
   float: right;
   border: 2px;
   border-style: solid;
